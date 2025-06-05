@@ -1,15 +1,11 @@
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { MainContent } from "./components/MainContent";
+import { Greetings } from "./components/Greetings";
+import { ProductInfo } from "./components/ProductInfo";
 
-function App() {
+export function App() {
   return (
     <div>
-      <Header />
-      <MainContent />
-      <Footer />
+      <Greetings />
+      <ProductInfo />
     </div>
   );
 }
-
-export default App;
