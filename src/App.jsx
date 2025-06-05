@@ -1,11 +1,11 @@
-import { Greetings } from "./components/Greetings";
-import { ProductInfo } from "./components/ProductInfo";
+import { ProductList } from "./components/ProductList";
+import { UserList } from "./components/UserList";
 
 export function App() {
   return (
     <div>
-      <Greetings />
-      <ProductInfo />
+        <UserList />
+        <ProductList />
     </div>
   );
 }
