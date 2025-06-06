@@ -1,13 +1,13 @@
-import { Greeting } from "./components/Greeting";
-import { UserStatus } from "./components/UserStatus";
-import { Weather } from "./components/Weather";
+import { IconComponenet } from "./components/IconComponent";
+import { ProfileCard } from "./components/profileCard";
+import { StyleCard } from "./components/StyleCard";
 
 export function App() {
   return (
     <div>
-      <Weather temperature={26} />
-      <UserStatus loggedIn={true} isAdmin={false} />
-      <Greeting timeOfDay='morning' />
+      <StyleCard />
+      <ProfileCard />
+      <IconComponenet />
     </div>
   );
 }
