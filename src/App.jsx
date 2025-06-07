@@ -1,13 +1,15 @@
-import { IconComponenet } from "./components/IconComponent";
-import { ProfileCard } from "./components/profileCard";
-import { StyleCard } from "./components/StyleCard";
+import { Counter } from "./components/Counter";
+import { Profile } from "./components/Profile";
+import { ShoppingList } from "./components/ShoppingList";
+import { ToDoList } from "./components/ToDoList";
 
 export function App() {
+
   return (
     <div>
-      <StyleCard />
-      <ProfileCard />
-      <IconComponenet />
+      <Counter />
+      <ToDoList />
+      <Profile />
     </div>
   );
 }
