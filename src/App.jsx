@@ -1,15 +1,16 @@
-import { Counter } from "./components/Counter";
-import { Profile } from "./components/Profile";
-import { ShoppingList } from "./components/ShoppingList";
-import { ToDoList } from "./components/ToDoList";
+import { useState, useEffect, use } from "react";
+import BasicEffect from "./components/BasicEffect";
+import CounterEffect from "./components/CounterEffect";
+import FetchDataEffect from "./components/FetchDataEffect";
 
 export function App() {
+  
 
   return (
     <div>
-      <Counter />
-      <ToDoList />
-      <Profile />
+      <BasicEffect />
+      <CounterEffect />
+      <FetchDataEffect />
     </div>
   );
 }
