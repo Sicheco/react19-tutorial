@@ -1,13 +1,15 @@
-import { useRef } from "react";
-import FocusInput from "./components/FocusInput";
-import Timer from "./components/Timer";
+import { useFetch } from "./components/useFetch";
 
 export function App() {
+  const [data] = useFetch('https://jsonplaceholder.typicode.com/todos');
 
   return (
     <div>
-      <FocusInput />
-      <Timer />
+      {data && data.map((todo) => (
+        <ul key={todo.id}>
+          <li>{todo.title}</li>
+        </ul>
+      ))}
     </div>
   );
 }
