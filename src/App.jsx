@@ -1,10 +1,9 @@
-import IntervalContainer from "./components/IntervalContainer";
+import Counter from "./components/Counter";
 
 export function App() {
-
   return (
     <div>
-      <IntervalContainer />
+      <Counter />
     </div>
   );
 }
